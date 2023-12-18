@@ -8,5 +8,5 @@ A docker composer config and nginx config to host multiple servers with a revers
 - Run docker compose
 
   ```sh
-  docker compose up
+  docker-compose up -d
   ```
