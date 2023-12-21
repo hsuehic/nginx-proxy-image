@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  bot:
+    image: nginx
+    volumes:
+      - ./bot:/usr/share/nginx/html:ro
+    ports:
+      - 8081:80
+  chat:
+    image: nginx
+    volumes:
+      - ./chat:/usr/share/nginx/html:ro
+    ports:
+      - 8082:80
+  trader:
+    image: nginx
+    volumes:
+      - ./trader:/usr/share/nginx/html:ro
+    ports:
+      - 8080:80

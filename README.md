@@ -10,3 +10,10 @@ A docker composer config and nginx config to host multiple servers with a revers
   ```sh
   docker-compose up -d
   ```
+
+## Meno
+
+- update domain certificate
+```sh
+acme.sh --issue -d bot.ihsueh.com -w /www/static
+```
